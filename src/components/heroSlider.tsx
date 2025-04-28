@@ -28,8 +28,11 @@ export function ImagesSliderDemo() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-4xl md:text-9xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+        <img className="h-[100px] w-auto white" src="TravelPlace_isotipo.png" alt="Travel Place Logo"/>
+
+        <motion.p className="font-bold text-5xl md:text-9xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
           TRAVEL PLACE <br /> 
+          
         </motion.p>
 
           <VelocityScroll defaultVelocity={1} numRows={1} className="z-50 text-white text-base md:text-3xl">Hoteles • Autos • Seguros • Paquetes • Trenes • Tours • Traslados • Bodas •</VelocityScroll>

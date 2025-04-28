@@ -8,10 +8,9 @@ import { Particles } from "@/components/magicui/particles";
 import { HeroParticle } from "@/components/hero";
 import HeroSection from "@/components/heroSection";
 import { TextReveal } from "@/components/magicui/text-reveal";
-import { TypingAnimation } from "@/components/magicui/typing-animation";
-import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import {Footer} from "@/components/ui/footer";
 import { ImagesSliderDemo } from "@/components/heroSlider";
+import BannerConsolidador from "@/components/bannerConsolidador";
 
 
 
@@ -21,23 +20,7 @@ export default function Home() {
     
     <main>
       <ImagesSliderDemo/>
-      {/* <HeroSection/> */}
-      <h1 className="text-3xl font-bold mb-4 text-center text-gray-900">Nuestro centro de reservas</h1>
-      <section className="py-8 px-12 bg-white text-center text-gray-900 grid grid-cols-2">
-        <div className="">
-            <TypingAnimation duration={60} >Ya te registraste para acceder al contenido más completo para tu agencia de viajes?</TypingAnimation>
-            <div className="flex justify-center">
-              <ShimmerButton>Registrarme</ShimmerButton>
-            </div>
-        </div>
-        <div className="">
-          <img src="Travelplace-encabezado-cotizador.jpg" alt="" />
-        </div>
-      
-
-      </section>
-
-
+      <BannerConsolidador/>
       <div className="relative flex h-[900px] w-full flex-col items-center justify-center overflow-hidden border bg-background">
       <h1 className="text-3xl font-bold mb-4 text-center text-gray-900">Paquetes destacados</h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 px-20">

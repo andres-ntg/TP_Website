@@ -10,8 +10,6 @@ import { CarouselIndicator } from "./carousel-indicator"
 import { useTiltEffect } from "./useTiltEffect"
 
 
-
-
 type Slide = {
   src: string
   alt: string
@@ -76,16 +74,17 @@ export function Carousel() {
   }, [emblaApi])
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden rounded-3xl" ref={emblaRef}>
+    <div className="relative lg:h-[100.0%] mx-auto">
+      <div className="overflow-hidden rounded-3xl lg:w-[90%] mx-auto"  ref={emblaRef}>
         <div className="flex touch-pan-y">
           {slides.map((slide, index) => (
             <div
               // className="sm:min-w-[100%] md:min-w-[70.0%] h-screen relative px-4"
-              className=" relative  md:min-w-[50.0%] px-4 py-6 md:px-8 lg:px-12 backface-hidden"
+              //className="relative sm:min-w-[100.0%] md:min-w-[50.0%] px-4 py-6 md:px-8 lg:px-12 backface-hidden"
+              className="relative min-w-[100.0%] lg:max-h-[50%] md:min-w-[50.0%] px-4 py-6 md:px-8 backface-hidden lg:min-w-[50.0%] lg:py-6 lg:px-20"
               key={index}
             >
-              <div className="relative aspect-auto overflow-hidden rounded-3xl shadow-md">
+              <div className="relative aspect-auto overflow-hidden rounded-3xl shadow-md h-full">
                 <img
                   src={slide.src}
                   alt={slide.alt}

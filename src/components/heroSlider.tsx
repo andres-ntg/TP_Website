@@ -5,12 +5,12 @@ import { ImagesSlider } from "@/components/ui/images-slider";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
-
 export function ImagesSliderDemo() {
   const images = [
-    "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1745598314075-00a187edfcd1?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1738069138588-6e6d67a5c697?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1740482881694-d72f4e4cc47e?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1661963952208-2db3512ef3de?q=80&w=1844&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   return (
     <ImagesSlider className="h-[40rem]" images={images}>
@@ -28,16 +28,23 @@ export function ImagesSliderDemo() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+        <img className="h-[100px] w-auto white" src="TravelPlace_isotipo.png" alt="Travel Place Logo"/>
+
+        <motion.p className="font-bold text-5xl md:text-9xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
           TRAVEL PLACE <br /> 
-          <VelocityScroll>Scroll Based Velocity</VelocityScroll>
+          
         </motion.p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Join now →</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-        </button>
-        <div className="px-4 py-2 mx-auto text-center  relative mt-4">
-            <ShimmerButton>Iniciar sesión</ShimmerButton>
+
+          <VelocityScroll defaultVelocity={1} numRows={1} className="z-50 text-white text-base md:text-3xl">Hoteles • Autos • Seguros • Paquetes • Trenes • Tours • Traslados • Bodas •</VelocityScroll>
+
+        <div className="mt-4">
+            
+              <a href="https://app.travelplacegt.com" target="_blank" rel="noopener noreferrer">
+              <ShimmerButton background="#ffffff" className="text-purple-900 font-bold border-purple-500 border" shimmerColor="#3b206e" shimmerSize="0.25rem">
+              Iniciar sesión
+              </ShimmerButton>
+              </a>
+
         </div>
       </motion.div>
     </ImagesSlider>

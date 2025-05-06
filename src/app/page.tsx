@@ -11,8 +11,6 @@ import { ImagesSliderDemo } from "@/components/heroSlider";
 import BannerConsolidador from "@/components/bannerConsolidador";
 
 
-
-
 export default function Home() {
   return (
     

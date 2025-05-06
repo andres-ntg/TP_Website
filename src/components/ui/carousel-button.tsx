@@ -18,7 +18,11 @@ export function CarouselButton({ direction, emblaApi }: CarouselButtonProps) {
       }`}
       onClick={() => {
         if (emblaApi) {
-          direction === "next" ? emblaApi.scrollNext() : emblaApi.scrollPrev();
+          if (direction === "next") {
+            emblaApi.scrollNext();
+          } else {
+            emblaApi.scrollPrev();
+          }
         }
       }}
     >

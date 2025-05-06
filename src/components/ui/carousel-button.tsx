@@ -1,7 +1,15 @@
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export function CarouselButton({ direction, emblaApi }: any) {
-  const Icon = direction === "next" ? ChevronRight : ChevronLeft
+interface CarouselButtonProps {
+  direction: "next" | "prev";
+  emblaApi: {
+    scrollNext: () => void;
+    scrollPrev: () => void;
+  } | null;
+}
+
+export function CarouselButton({ direction, emblaApi }: CarouselButtonProps) {
+  const Icon = direction === "next" ? ChevronRight : ChevronLeft;
 
   return (
     <button
@@ -9,10 +17,12 @@ export function CarouselButton({ direction, emblaApi }: any) {
         direction === "next" ? "right-4" : "left-4"
       }`}
       onClick={() => {
-        direction === "next" ? emblaApi?.scrollNext() : emblaApi?.scrollPrev()
+        if (emblaApi) {
+          direction === "next" ? emblaApi.scrollNext() : emblaApi.scrollPrev();
+        }
       }}
     >
       <Icon className="text-white" />
     </button>
-  )
+  );
 }

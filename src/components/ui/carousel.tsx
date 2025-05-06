@@ -106,8 +106,12 @@ export function Carousel() {
       </div>
 
       {/* Botones */}
-      <CarouselButton direction="prev" emblaApi={emblaApi} />
-      <CarouselButton direction="next" emblaApi={emblaApi} />
+      {emblaApi && (
+        <>
+          <CarouselButton direction="prev" emblaApi={emblaApi} />
+          <CarouselButton direction="next" emblaApi={emblaApi} />
+        </>
+      )}
 
       {/* Indicadores */}
       <div className="mt-4 flex justify-center gap-2">

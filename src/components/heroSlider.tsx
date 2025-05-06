@@ -40,12 +40,12 @@ export function ImagesSliderDemo() {
 
         <div className="mb-30 md:mb-5">
               <a href="https://app.travelplacegt.com" target="_blank" rel="noopener noreferrer">
-                <ShimmerButton background="#ffffff" className="text-purple-900 font-bold border-purple-500 border mx-auto" shimmerColor="#3b206e" shimmerSize="0.25rem">
+                <ShimmerButton background="#ffffff" className="text-purple-900 font-bold border-purple-500 border mt-7 mx-auto" shimmerColor="#3b206e" shimmerSize="0.25rem">
                   Iniciar sesión
                 </ShimmerButton>
               </a>
         </div>
-        <div className="bg-red w-full -mb-52 md:-mb-35">
+        <div className="bg-red w-full -mb-50 md:-mb-32">
           <img src="/hero_waves_mod.svg" alt="Hero Waves" className="w-full max-w-screen mx-auto h-auto lg:max-x-[100.0%] " />
         </div>
       </motion.div>

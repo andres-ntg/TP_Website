@@ -1,16 +1,15 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { Particles } from "@/components/magicui/particles";
 
 export function HeroParticle() {
   const { resolvedTheme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
 
   useEffect(() => {
-    setColor(resolvedTheme === "light" ? "#ffffff" : "#000000");
+    // Logic related to theme can be added here if needed in the future
   }, [resolvedTheme]);
 
   return (
@@ -25,7 +24,6 @@ export function HeroParticle() {
         color={"#000000"}
         refresh
       />
-      
     </div>
   );
 }

@@ -5,12 +5,6 @@ import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import { useEffect } from "react"
 
-const imageslocal = [
-  { src: "/paris.jpg", alt: "París" },
-  { src: "/rome.jpg", alt: "Roma" },
-  { src: "/newyork.jpg", alt: "Nueva York" },
-]
-
 const images = [
     { src: "https://picsum.photos/id/1015/800/400", alt: "Destino 1" },
     { src: "https://picsum.photos/id/1016/800/400", alt: "Destino 2" },

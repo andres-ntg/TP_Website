@@ -9,6 +9,8 @@ import { TextReveal } from "@/components/magicui/text-reveal";
 import {Footer} from "@/components/ui/footer";
 import { ImagesSliderDemo } from "@/components/heroSlider";
 import BannerConsolidador from "@/components/bannerConsolidador";
+import TeamSection from "@/components/teamSection";
+import { BlurFadeGrid } from "@/components/imageGridSection";
 
 
 export default function Home() {
@@ -27,6 +29,10 @@ export default function Home() {
       </div>
 
       <TextReveal className="mt-0">Somos un operador mayorista que dispone de alianzas estratégicas con el propósito de servir como socio de excelencia de los agentes de viajes para alcanzar juntos la satisfacción de nuestros viajeros.</TextReveal>
+  
+    <BlurFadeGrid></BlurFadeGrid>
+      <h1 className="text-3xl font-bold mb-4 text-center text-gray-900">CONOCE A NUESTRO EQUIPO</h1>
+      <TeamSection></TeamSection>
       <Footer></Footer>
     </main>
   )}

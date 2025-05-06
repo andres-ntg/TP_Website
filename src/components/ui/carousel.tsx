@@ -81,7 +81,7 @@ export function Carousel() {
             <div
               // className="sm:min-w-[100%] md:min-w-[70.0%] h-screen relative px-4"
               //className="relative sm:min-w-[100.0%] md:min-w-[50.0%] px-4 py-6 md:px-8 lg:px-12 backface-hidden"
-              className="relative min-w-[100.0%] lg:max-h-[50%] md:min-w-[50.0%] px-4 py-6 md:px-8 backface-hidden lg:min-w-[50.0%] lg:py-6 lg:px-20"
+              className="relative min-w-[100.0%] md:min-w-[50.0%] px-4 py-6 md:px-8 lg:max-h-[20%] backface-hidden"
               key={index}
             >
               <div className="relative aspect-auto overflow-hidden rounded-3xl shadow-md h-full">

@@ -25,6 +25,7 @@ export function HeroParticle() {
         color={"#000000"}
         refresh
       />
+      
     </div>
   );
 }

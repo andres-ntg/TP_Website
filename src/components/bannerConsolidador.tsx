@@ -20,19 +20,6 @@ const BannerConsolidador = () => {
                     <div className="white text-white py-6">
                         <h1 className="text-4xl font-bold mb-4 text-center z-50 text-purple-900">Tecnología de viajes</h1>
                     </div>
-                    <svg
-                        className="absolute lg:-bottom-33 bottom-9 w-full -z-0"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1440 320"
-                    >
-                        <path
-                            fill="#ffffff"
-                            fillOpacity="1"
-                            d="M0,50 Q360,0 720,50 T1440,50 V100 H0 Z"
-                        ></path>
-                    </svg>
-
-                    
                 </div>
                 <div  className="flex justify-center space-x-4">
                             <Card className="relative sm:w-full  lg:w-[70%] shadow-none mb-15 ">

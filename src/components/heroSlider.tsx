@@ -13,6 +13,7 @@ export function ImagesSliderDemo() {
     "https://plus.unsplash.com/premium_photo-1661963952208-2db3512ef3de?q=80&w=1844&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   return (
+    <div>
     <ImagesSlider className="h-[40rem]" images={images}>
       <motion.div
         initial={{
@@ -40,13 +41,16 @@ export function ImagesSliderDemo() {
         <div className="mt-4">
             
               <a href="https://app.travelplacegt.com" target="_blank" rel="noopener noreferrer">
-              <ShimmerButton background="#ffffff" className="text-purple-900 font-bold border-purple-500 border" shimmerColor="#3b206e" shimmerSize="0.25rem">
-              Iniciar sesión
-              </ShimmerButton>
+                <ShimmerButton background="#ffffff" className="text-purple-900 font-bold border-purple-500 border mx-auto" shimmerColor="#3b206e" shimmerSize="0.25rem">
+                  Iniciar sesión
+                </ShimmerButton>
               </a>
-
+        </div>
+        <div className="bg-red w-full -mb-45">
+          <img src="/hero_waves_mod.svg" alt="Hero Waves" className="w-full max-w-screen-xl mx-auto h-auto lg:max-x-[100.0%]" />
         </div>
       </motion.div>
     </ImagesSlider>
+    </div>
   );
 }

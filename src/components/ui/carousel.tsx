@@ -21,7 +21,7 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    src: "Saltando emocionado.jpg",
+    src: "TravelitoSaltando.png",
     alt: "Tortuga",
     title: "The Sky-Dweller is a compelling timepiece of contemporary design.",
     description: "",
@@ -29,7 +29,7 @@ const slides: Slide[] = [
     role: "CEO, Company Name",
   },
   {
-    src: "Catalogo 500px.jpg",
+    src: "TravelitoExplorando.png",
     alt: "León",
     title: "The Sky-Dweller is a compelling timepiece of contemporary design.",
     description: "",
@@ -37,7 +37,7 @@ const slides: Slide[] = [
     role: "CEO, Company Name",
   },
   {
-    src: "Nationalito.jpg",
+    src: "Tavelito.png",
     alt: "Tigre",
     title: "The Sky-Dweller is a compelling timepiece of contemporary design.",
     description: "",

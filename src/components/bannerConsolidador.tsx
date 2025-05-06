@@ -17,7 +17,7 @@ const BannerConsolidador = () => {
         <div >
             <div className="relative">
                     <div className="white text-white py-6">
-                        <h1 className="text-4xl font-bold mb-4 text-center z-50 text-purple-900">Tecnología de viajes</h1>
+                        <h1 className="text-4xl font-bold mb-4 text-center z-50 text-purple-900">TECNOLOGÍA DE VIAJES</h1>
                     </div>
                 </div>
                 <div  className="flex justify-center space-x-4">

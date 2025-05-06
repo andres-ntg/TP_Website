@@ -12,8 +12,8 @@ export default function Home() {
     <main>
       <ImagesSliderDemo />
       <BannerConsolidador />
-      <div className="relative flex h-[900px] w-full flex-col items-center justify-center overflow-hidden border bg-background">
-        <h1 className="text-3xl font-bold mb-4 text-center text-gray-900">Paquetes destacados</h1>
+      <div className="relative flex h-[33.0%] w-full flex-col items-center justify-center overflow-hidden border bg-background">
+        <h1 className="text-3xl font-bold text-center text-gray-900 ">PAQUETES DESTACADOS</h1>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 px-20">
           <div className="item-center gap-6 col-span-2 py-10 lg:w-[75.0%] mx-auto">
             <Carousel />

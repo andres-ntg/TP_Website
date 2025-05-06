@@ -3,7 +3,6 @@ import React from 'react';
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { Lens } from "@/components/magicui/lens";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,

@@ -3,7 +3,6 @@
 import * as React from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
-import { cn } from "@/lib/utils"
 
 import { CarouselButton } from "./carousel-button"
 import { CarouselIndicator } from "./carousel-indicator"

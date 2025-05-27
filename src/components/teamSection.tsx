@@ -7,46 +7,34 @@ import { ShineBorder } from './magicui/shine-border';
 const reviews = [
     {
       name: "Samantha Figueroa",
-      username: "@Samantha",
-      body: "I've never seen anything like this before. It's amazing. I love it.",
-      img: "https://travelplacegt.com/images/Pic-Samanta.webp",
+      username: "samantha@travelplacegt.com",
+      body: "Es un verdadero placer asistirle.",
+      img: "https://app.viajareslomio.com/images/Firmas/Samantha.png",
     },
     {
       name: "Jorge Marroquín",
-      username: "@jorge",
-      body: "I don't know what to say. I'm speechless. This is amazing.",
-      img: "https://travelplacegt.com/images/Pic-Jorge.webp",
-    },
-    {
-      name: "Luz Rosales",
-      username: "@luz",
-      body: "I'm at a loss for words. This is amazing. I love it.",
-      img: "https://travelplacegt.com/images/Pic-Luz.webp",
+      username: "jorge@travelplacegt.com",
+      body: "Gracias por confiar en nuestro trabajo, estoy feliz de poder apoyarte",
+      img: "https://app.viajareslomio.com/images/Firmas/Jorge.png",
     },
     {
       name: "Astrid Avilés",
-      username: "@jane",
-      body: "I'm at a loss for words. This is amazing. I love it.",
-      img: "https://avatar.vercel.sh/jane",
+      username: "astrid@travelplacegt.com",
+      body: "Todo en un solo lugar",
+      img: "https://app.viajareslomio.com/images/Firmas/Astrid.png",
     },
     {
       name: "Damariz Pérez",
-      username: "@jenny",
-      body: "I'm at a loss for words. This is amazing. I love it.",
-      img: "https://avatar.vercel.sh/jenny",
+      username: "damariz@travelplacegt.com",
+      body: "Gracias por tu preferencia, es un gusto apoyarte!",
+      img: "https://app.viajareslomio.com/images/Firmas/Damariz.png",
     },
     {
       name: "Blas Calix",
-      username: "@james",
-      body: "I'm at a loss for words. This is amazing. I love it.",
-      img: "https://avatar.vercel.sh/james",
+      username: "blas@travelplacegt.com",
+      body: "Viaja con el corazón, planea con nosotros",
+      img: "https://app.viajareslomio.com/images/Firmas/Blas.png",
     },
-    {
-        name: "Juan López",
-        username: "@juan",
-        body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/james",
-      },
   ];
    
   const firstRow = reviews.slice(0, reviews.length / 2);
@@ -94,16 +82,20 @@ const TeamSection: React.FC = () => {
     return (
         
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+          <br />
             <Marquee pauseOnHover className="[--duration:20s]">
                 {firstRow.map((review) => (
                 <ReviewCard key={review.username} {...review} />
                 ))}
-            </Marquee>
-            <Marquee reverse pauseOnHover className="[--duration:20s]">
                 {secondRow.map((review) => (
                 <ReviewCard key={review.username} {...review} />
                 ))}
             </Marquee>
+            {/* <Marquee reverse pauseOnHover className="[--duration:20s]">
+                {secondRow.map((review) => (
+                <ReviewCard key={review.username} {...review} />
+                ))}
+            </Marquee> */}
             <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
             <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
             </div>

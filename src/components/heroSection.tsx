@@ -6,7 +6,9 @@ import { WordRotate } from "@/components/magicui/word-rotate";
 
 export default function HeroSection() { 
 return  (
+
 <div className="relative h-[800px] bg-gradient-to-b from-[#ffffff] to-[#ffffff]">
+
 <div className="flex justify-end mt-10 mr-10">
     <ShimmerButton>Iniciar sesión</ShimmerButton>
 </div>
@@ -21,8 +23,6 @@ return  (
     </div>
     <HeroParticle/>
 </div>
-
-
 )
 
 }

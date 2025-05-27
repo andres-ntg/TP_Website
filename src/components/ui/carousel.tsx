@@ -20,36 +20,36 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    src: "TravelitoSaltando.png",
-    alt: "Tortuga",
-    title: "The Sky-Dweller is a compelling timepiece of contemporary design.",
-    description: "",
-    author: "John Doe",
-    role: "CEO, Company Name",
+    src: "patagonia.jpg",
+    alt: "Explora Patagonia 360",
+    title: "Explora Patagonia 360°: Aventura en el Fin del Mundo",
+    description: "8 días y 7 noches recorriendo Buenos Aires, Ushuaia y El Calafate. Caminatas, bicicleta, trekking, canoas y mini-trekking en el Glaciar Perito Moreno. Salidas del 1 al 31 de agosto. Desde $1,570 por persona.",
+    author: "Astrid",
+    role: "Europa Experta",
   },
   {
-    src: "TravelitoExplorando.png",
-    alt: "León",
-    title: "The Sky-Dweller is a compelling timepiece of contemporary design.",
-    description: "",
-    author: "John Doe",
-    role: "CEO, Company Name",
+    src: "Europa.jpg",
+    alt: "Europa Inolvidable",
+    title: "Europa Inolvidable: Madrid, París y Roma en 16 días",
+    description: "Recorre 10 ciudades icónicas de Europa con guía, transporte en autocar de lujo, visitas en español y desayuno incluido. Salidas todos los sábados. Desde $2,678 por persona.",
+    author: "Astrid",
+    role: "Europa Experta",
   },
   {
-    src: "Tavelito.png",
-    alt: "Tigre",
-    title: "The Sky-Dweller is a compelling timepiece of contemporary design.",
-    description: "",
-    author: "John Doe",
-    role: "CEO, Company Name",
+    src: "Madrid.jpg",
+    alt: "Europa Latina: Madrid, París y Barcelona en 11 días",
+    title: "Europa Latina: Madrid, París y Barcelona en 11 días",
+    description: "Descubre lo mejor del sur de Europa en un recorrido por Madrid, Burdeos, París y Barcelona. Salidas todos los sábados. Desde $1,830 por persona.",
+    author: "Jorge Marroquín",
+    role: "Operador Experto",
   },
   {
     src: "https://picsum.photos/400/600?random=3",
-    alt: "Tigre",
-    title: "The Sky-Dweller is a compelling timepiece of contemporary design.",
-    description: "",
-    author: "Edwin Muj",
-    role: "CEO, Company Name",
+    alt: "Paquetes personalizados",
+    title: "Paquetes Personalizados: Tu Viaje a Medida",
+    description: "Creamos itinerarios únicos adaptados a tus intereses y presupuesto. Desde escapadas románticas hasta aventuras familiares, tenemos el paquete perfecto para ti.",
+    author: "Jorge Marroquín",
+    role: "Operador Experto",
   },
 ]
 
@@ -90,7 +90,10 @@ export function Carousel() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/10 backdrop-blur-md text-white rounded-xl border border-white/50 ">
-                  <h3 className="text-lg font-semibold">{slide.title}</h3>
+                  <h3 className="text-xl font-bold">{slide.title}</h3>
+                  <br />
+                  <p className="text-lg font-semibold">{slide.description}</p>
+                  <br />
                     <p className="text-sm ">{slide.author}</p>
                     <p className="text-xs text-white/70 ">{slide.role}</p>
                 </div>

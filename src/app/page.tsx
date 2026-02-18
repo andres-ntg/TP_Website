@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <div className="absolute top-10 right-10 bg-transparent flex center z-50 padding-2 ">
         <a
-          href={`https://wa.me/502168161?text=${encodeURIComponent(
+          href={`https://wa.me/50223168151?text=${encodeURIComponent(
             "¡Hola! 👋 Me gustaría recibir más información sobre los servicios de Travel Place. ✈️✨",
           )}`}
           target="_blank"
@@ -26,13 +26,13 @@ export default function Home() {
             WhatsApp
           </ShimmerButton>
         </a>
-        <a href="tel:+50223168161" target="_blank" rel="noopener noreferrer">
+        <a href="tel:+50223168151" target="_blank" rel="noopener noreferrer">
           <ShimmerButton
             background="#ffffff"
             className="text-purple-900"
             shimmerColor="#3b206e"
           >
-            PBX: 2316 8161
+            PBX: 2316 8151
           </ShimmerButton>
         </a>
       </div>

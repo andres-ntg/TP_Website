@@ -91,8 +91,8 @@ export function Footer() {
                 />
                 <span>
                   Teléfono:{" "}
-                  <a href="tel:+50223168161" className="text-purple-950">
-                    +502 2316 8161
+                  <a href="tel:+50223168151" className="text-purple-950">
+                    +502 2316 8151
                   </a>
                 </span>
               </div>

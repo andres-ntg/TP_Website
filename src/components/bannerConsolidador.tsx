@@ -61,7 +61,7 @@ const BannerConsolidador = () => {
           </CardContent>
           <CardFooter className="flex justify-center space-x-4">
             <a
-              href={`https://wa.me/50256320386?text=${encodeURIComponent(
+              href={`https://wa.me/50223168151?text=${encodeURIComponent(
                 "¡Hola! 👋 Me interesa conocer más sobre su plataforma de reserva y cotizaciones para mi agencia de viajes. ✈️🌍 ¡Muchas gracias! ✨",
               )}`}
               target="_blank"

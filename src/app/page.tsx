@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <div className="absolute top-10 right-10 bg-transparent flex center z-50 padding-2 ">
         <a
-          href={`https://wa.me/50223168151?text=${encodeURIComponent(
+          href={`https://wa.me/50256320386?text=${encodeURIComponent(
             "¡Hola! 👋 Me gustaría recibir más información sobre los servicios de Travel Place. ✈️✨",
           )}`}
           target="_blank"

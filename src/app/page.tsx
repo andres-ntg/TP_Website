@@ -7,6 +7,7 @@ import BannerConsolidador from "@/components/bannerConsolidador";
 import TeamSection from "@/components/teamSection";
 import { BlurFadeGrid } from "@/components/imageGridSection";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
+import OfertaLaboralModal from "@/components/ofertaLaboralModal";
 export default function Home() {
   return (
     <main>
@@ -38,7 +39,11 @@ export default function Home() {
       </div>
 
       <ImagesSliderDemo />
+
+      <OfertaLaboralModal />
+
       <BannerConsolidador />
+
       <div className="relative flex h-[33.0%] w-full flex-col items-center justify-center overflow-hidden border bg-background">
         <h1 className="text-4xl font-bold text-center text-purple-900 ">
           PAQUETES DESTACADOS

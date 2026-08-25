@@ -4,6 +4,7 @@ import React from "react";
 import { ImagesSlider } from "@/components/ui/images-slider";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { FileText } from "lucide-react";
 
 export function ImagesSliderDemo() {
   const images = [
@@ -49,20 +50,18 @@ export function ImagesSliderDemo() {
           </VelocityScroll>
 
           <div className="mb-30 md:mb-5">
-            <a
-              href="https://app.travelplacegt.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <ShimmerButton
                 background="#ffffff"
-                className="text-purple-900 font-bold border-purple-500 border mt-7 mx-auto"
+                className="text-purple-900 font-bold border-purple-500 border mt-7 mx-auto gap-2"
                 shimmerColor="#3b206e"
                 shimmerSize="0.25rem"
+                onClick={() => {
+                  window.location.href = "/api/auth/login?returnTo=/tarifario";
+                }}
               >
-                ¡Necesito una plataforma de reservas! 🚀
+                <FileText className="h-5 w-5" aria-hidden="true" />
+                Ver Tarifario
               </ShimmerButton>
-            </a>
           </div>
           <div className="bg-red w-full -mb-50 md:-mb-32">
             <img

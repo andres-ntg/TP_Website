@@ -8,6 +8,8 @@ import TeamSection from "@/components/teamSection";
 import { BlurFadeGrid } from "@/components/imageGridSection";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import OfertaLaboralModal from "@/components/ofertaLaboralModal";
+import { FileText, Phone, MessageCircle } from "lucide-react";
+
 export default function Home() {
   return (
     <main>
@@ -21,19 +23,21 @@ export default function Home() {
         >
           <ShimmerButton
             background="#ffffff"
-            className="text-lime-500 mr-10"
+            className="text-lime-500 mr-10 gap-2 px-4 py-2 text-sm font-semibold"
             shimmerColor="#95D00"
           >
+            <MessageCircle className="h-4 w-4" aria-hidden="true" />
             WhatsApp
           </ShimmerButton>
         </a>
         <a href="tel:+50223168151" target="_blank" rel="noopener noreferrer">
           <ShimmerButton
             background="#ffffff"
-            className="text-purple-900"
+            className="text-purple-900 gap-2 px-4 py-2 text-sm font-semibold"
             shimmerColor="#3b206e"
           >
-            PBX: 2316 8151
+            <Phone className="h-4 w-4" aria-hidden="true" />
+            2316 8151
           </ShimmerButton>
         </a>
       </div>

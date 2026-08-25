@@ -3,6 +3,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Marca Travel Place: reemplaza la paleta violet-* por defecto de Tailwind con el tono #4B148C */
+@theme {
+  --color-violet-50: #f2eff7;
+  --color-violet-100: #dfd5ea;
+  --color-violet-200: #c0add7;
+  --color-violet-300: #9c7ec0;
+  --color-violet-400: #784fa9;
+  --color-violet-500: #4b148c;
+  --color-violet-600: #401177;
+  --color-violet-700: #350e62;
+  --color-violet-800: #290b4d;
+  --color-violet-900: #1e0838;
+  --color-violet-950: #150627;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
